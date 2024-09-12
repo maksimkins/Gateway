@@ -1,0 +1,34 @@
+{
+    "Routes": [
+        {
+            "UpstreamPathTemplate": "/api/Identity/Create",
+            "UpstreamHttpMethod": [
+                "Post"
+            ],
+
+            "DownstreamPathTemplate": "/api/Identity/Create",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": "7001"
+                }
+            ]
+        },
+        {
+            "UpstreamPathTemplate": "/api/Users",
+            "UpstreamHttpMethod": [
+                "Get"
+            ],
+
+            "DownstreamPathTemplate": "/api/Users",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": "7000"
+                }
+            ]
+        }
+    ]
+}
